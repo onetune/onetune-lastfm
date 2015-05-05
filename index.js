@@ -23,7 +23,6 @@ exports.LastFm = function(options) {
 			token: request.query.token
 		})
 		session.on('success', function (session) {
-			console.log(session)
 			options.saveToken(request, session.key, session.user, function (success) {
 				if (!success) {
 					return response.end('You need to be logged in to link your account to Last.fm')
@@ -51,7 +50,6 @@ exports.LastFm = function(options) {
 				});
 			})
 			scrobble.on('error', function (error) {
-				console.log(error)
 				response.json({
 					success: false
 				});
