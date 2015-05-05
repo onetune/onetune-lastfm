@@ -1,0 +1,21 @@
+{
+  "name": "@jonny/onetune-lastfm",
+  "version": "1.0.0",
+  "description": "We use this on our servers to enable scrobbling!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "onetune",
+    "lastfm"
+  ],
+  "author": "Jonny <jonathanburger11@gmail.com> (http://jonny.io)",
+  "license": "ISC",
+  "repository": "https://github.com/onetune/onetune-lastfm",
+  "dependencies": {
+    "express": "^4.12.3",
+    "lastfm": "^0.9.2",
+    "underscore": "^1.8.3"
+  }
+}
