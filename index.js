@@ -12,7 +12,7 @@ exports.LastFm = function(options) {
 	this.router = express.Router();
 
 	this.router.get('/auth', function (request, response) {
-		response.redirect('http://www.lastfm.de/api/auth?api_key=' + options.api_key + '&cb=http://' + request.headers.host + '/lastfm/callback');
+		response.redirect('http://www.last.fm/api/auth?api_key=' + options.api_key + '&cb=http://' + request.headers.host + '/lastfm/callback');
 	});
 
 	this.router.get('/callback', function (request, response) {
