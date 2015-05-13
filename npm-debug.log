@@ -1,0 +1,98 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@2.8.4
+3 info using node@v1.3.0
+4 verbose node symlink /usr/local/bin/node
+5 verbose publish [ '.' ]
+6 silly cache add args [ '.', null ]
+7 verbose cache add spec .
+8 silly cache add parsed spec { raw: '.',
+8 silly cache add   scope: null,
+8 silly cache add   name: null,
+8 silly cache add   rawSpec: '.',
+8 silly cache add   spec: '/Users/jonnyburger/Desktop/onetune-lastfm',
+8 silly cache add   type: 'directory' }
+9 verbose addLocalDirectory /Users/jonnyburger/.npm/@jonny/onetune-lastfm/1.0.1/package.tgz not in flight; packing
+10 verbose tar pack [ '/Users/jonnyburger/.npm/@jonny/onetune-lastfm/1.0.1/package.tgz',
+10 verbose tar pack   '/Users/jonnyburger/Desktop/onetune-lastfm' ]
+11 verbose tarball /Users/jonnyburger/.npm/@jonny/onetune-lastfm/1.0.1/package.tgz
+12 verbose folder /Users/jonnyburger/Desktop/onetune-lastfm
+13 info prepublish @jonny/onetune-lastfm@1.0.1
+14 verbose addLocalTarball adding from inside cache /Users/jonnyburger/.npm/@jonny/onetune-lastfm/1.0.1/package.tgz
+15 silly cache afterAdd @jonny/onetune-lastfm@1.0.1
+16 verbose afterAdd /Users/jonnyburger/.npm/@jonny/onetune-lastfm/1.0.1/package/package.json not in flight; writing
+17 verbose afterAdd /Users/jonnyburger/.npm/@jonny/onetune-lastfm/1.0.1/package/package.json written
+18 silly publish { name: '@jonny/onetune-lastfm',
+18 silly publish   version: '1.0.1',
+18 silly publish   description: 'We use this on our servers to enable scrobbling!',
+18 silly publish   main: 'index.js',
+18 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+18 silly publish   keywords: [ 'onetune', 'lastfm' ],
+18 silly publish   author:
+18 silly publish    { name: 'Jonny',
+18 silly publish      email: 'jonathanburger11@gmail.com',
+18 silly publish      url: 'http://jonny.io' },
+18 silly publish   license: 'ISC',
+18 silly publish   repository:
+18 silly publish    { type: 'git',
+18 silly publish      url: 'git+https://github.com/onetune/onetune-lastfm.git' },
+18 silly publish   dependencies: { express: '^4.12.3', lastfm: '^0.9.2', underscore: '^1.8.3' },
+18 silly publish   readme: '# OneTune X Last.fm\n\nWe use this code to allow users to scrobble to Last.fm.\nIt is specific to onetune.fm, so you might not find it useful. Nonetheless, we want to open source more of our code.',
+18 silly publish   readmeFilename: 'README.md',
+18 silly publish   gitHead: 'bfb4ba85ef591dda0843f5d9c8c4d94a7c11a0e7',
+18 silly publish   bugs: { url: 'https://github.com/onetune/onetune-lastfm/issues' },
+18 silly publish   homepage: 'https://github.com/onetune/onetune-lastfm#readme',
+18 silly publish   _id: '@jonny/onetune-lastfm@1.0.1',
+18 silly publish   _shasum: '26ecf18f7984aa44fe32a1edddfb28d5061873ff',
+18 silly publish   _from: '.' }
+19 silly mapToRegistry name @jonny/onetune-lastfm
+20 silly mapToRegistry scope (from package name) @jonny
+21 verbose mapToRegistry no registry URL found in name for scope @jonny
+22 silly mapToRegistry using default registry
+23 silly mapToRegistry registry https://registry.npmjs.org/
+24 silly mapToRegistry uri https://registry.npmjs.org/@jonny%2fonetune-lastfm
+25 verbose publish registryBase https://registry.npmjs.org/
+26 silly publish uploading /Users/jonnyburger/.npm/@jonny/onetune-lastfm/1.0.1/package.tgz
+27 verbose request uri https://registry.npmjs.org/@jonny%2fonetune-lastfm
+28 verbose request sending authorization for write operation
+29 info attempt registry request try #1 at 00:12:31
+30 verbose request using bearer token for auth
+31 verbose request id 7af8cabaa7ecfeb9
+32 http request PUT https://registry.npmjs.org/@jonny%2fonetune-lastfm
+33 http 403 https://registry.npmjs.org/@jonny%2fonetune-lastfm
+34 verbose headers { 'content-type': 'application/json',
+34 verbose headers   'cache-control': 'max-age=0',
+34 verbose headers   'content-length': '95',
+34 verbose headers   'accept-ranges': 'bytes',
+34 verbose headers   date: 'Wed, 13 May 2015 22:12:32 GMT',
+34 verbose headers   via: '1.1 varnish',
+34 verbose headers   connection: 'keep-alive',
+34 verbose headers   'x-served-by': 'cache-ams4133-AMS',
+34 verbose headers   'x-cache': 'MISS',
+34 verbose headers   'x-cache-hits': '0',
+34 verbose headers   'x-timer': 'S1431555151.651480,VS0,VE697' }
+35 verbose request invalidating /Users/jonnyburger/.npm/registry.npmjs.org/_40jonny_252fonetune-lastfm on PUT
+36 error publish Failed PUT 403
+37 verbose stack Error: "You cannot publish over the previously published version 1.0.1." : @jonny%2fonetune-lastfm
+37 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:247:14)
+37 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:170:14)
+37 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:368:22)
+37 verbose stack     at emitTwo (events.js:87:13)
+37 verbose stack     at Request.emit (events.js:169:7)
+37 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1219:14)
+37 verbose stack     at emitOne (events.js:82:20)
+37 verbose stack     at Request.emit (events.js:166:7)
+37 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1167:12)
+37 verbose stack     at emitNone (events.js:72:20)
+38 verbose statusCode 403
+39 verbose pkgid @jonny%2fonetune-lastfm
+40 verbose cwd /Users/jonnyburger/Desktop/onetune-lastfm
+41 error Darwin 14.1.0
+42 error argv "node" "/usr/local/bin/npm" "publish"
+43 error node v1.3.0
+44 error npm  v2.8.4
+45 error code E403
+46 error "You cannot publish over the previously published version 1.0.1." : @jonny%2fonetune-lastfm
+47 error If you need help, you may report this error at:
+47 error     <https://github.com/npm/npm/issues>
+48 verbose exit [ 1, true ]

@@ -1,6 +1,6 @@
 {
   "name": "@jonny/onetune-lastfm",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "We use this on our servers to enable scrobbling!",
   "main": "index.js",
   "scripts": {
